@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	</script>
+	<title>Контакты</title>
+	<link rel="stylesheet" type="text/css "href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<body>
+	<div class="container">
+		<div class="header">
+		<div class="logo"><a href="index.html" class="logo__link"><img class="logo_img" src="img/logo.png" alt="logo"></a></div>
+		<div class="mycompany">san-fran digit</div>
+		<div class	="str"></div>
+		<div class="navbar">
+			<ul class="nav">
+				<li class="nav_str"><a href="index.html" class="nav_link" id="index">Главная</a></li>
+				<li class="nav_str"><a href="catalog.html" class="nav_link" id="catalog">Каталог</a></li>
+				<li class="nav_str"><a href="contacts.html" class="nav_link" id="contacts">Контакты</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="main">
+		<h3 class="h3">Свяжитесь с&nbsp;нами!</h3>
+		<p>Если Вы&nbsp;не&nbsp;нашли интересующее Вас изображение и&nbsp;хотите, чтобы наш художник выполнил его для Вас&nbsp;&mdash; оставьте, пожалуйста, свои контактные данные и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся.<br>
+		Если Вы&nbsp;имеете уточнения&nbsp;&mdash; укажите&nbsp;их, пожалуйста, в&nbsp;описании.</p>
+		<input class="input" type="text" size="20" placeholder="Имя"><br>
+		<input class="input" type="E-mail" size="20" placeholder="E-mail"><br>
+		<input class="input" type="text" size="20" placeholder="Тема"><br>
+		<label><input id="chk" type="checkbox" onclick="addForm()">Добавить описание</label> <br>
+		<form>
+		<textarea class="input" id="txt" rows="5" cols="50" style="display: none;"></textarea> <br>
+		<input class="button" type="submit" value="Отправить">
+		<input class="button"type="reset" value="Очистить">
+		</form>
+		<h3 class="h3">Контакты</h3>
+			<ul>
+			<li><a href="mailto:info@san-fran-cifra.ru"><b>E-mail:</b> info@san-fran-cifra.ru</a></li>
+			</ul>
+		</div>
+	<div class="footer">
+		All rights reserved &copy;&nbsp;2019
+	</div>
+		<script type="text/javascript">
+			var link = document.URL;
+			var a = link.split("/");
+			var page = a[a.length -1];
+			var get_id = page.split(".");
+			var id = get_id[0];
+			var d = document.getElementById(id).classList.add('current');
+		</script>
+		<script type="text/javascript">
+		function addForm(){
+			var chk = document.getElementById('chk').checked;
+			if (chk == false){
+				document.getElementById('txt').style.display = "none";
+			}else if (chk == true) {
+				document.getElementById('txt').style.display = "block";
+			}
+		}
+		</script>
+	</body>
+	</html>

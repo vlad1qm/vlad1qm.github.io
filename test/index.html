@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<link rel="stylesheet" type="text/css "href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		<div class="logo"><a href="index.html" class="logo__link"><img class="logo_img" src="img/logo.png" alt="logo"></a></div>
+		<div class="mycompany">san-fran digit</div>
+		<div class	="str"></div>
+		<div class="navbar">
+			<ul class="nav">
+				<li class="nav_str"><a href="index.html" class="nav_link" id="index">Главная</a></li>
+				<li class="nav_str"><a href="catalog.html" class="nav_link" id="catalog">Каталог</a></li>
+				<li class="nav_str"><a href="contacts.html" class="nav_link" id="contacts">Контакты</a></li>
+			</ul>
+		<script type="text/javascript">
+			var link = document.URL;
+			var a = link.split("/");
+			var page = a[a.length -1];
+			var get_id = page.split(".");
+			var id = get_id[0];
+			var d = document.getElementById(id).classList.add('current');
+		</script>
+		</div>
+		</div>
+		<div class="main">
+			<h3 class="h3">Интернет-магазин изображений и&nbsp;графики &laquo;Сан-Фран Цифра&raquo;</h3>
+			<p><b>Добро пожаловать в&nbsp;наш магазин!</b></p>
+			<p>У&nbsp;нас предоставлен большой выбор разнообразных изображений и&nbsp;фотографий выполненных в&nbsp;разных форматах.<br>
+			Вы&nbsp;сможете найти готовую графику для:<br>
+			</p>
+			<ul>
+				<li>создания логотипов</li>
+				<li>создания принтов для футболок, кружек и&nbsp;т.д.</li>	
+				<li>создания обложек</li>
+			</ul>
+			<p>Если Вы&nbsp;не&nbsp;нашли&nbsp;то, что искали, то&nbsp;можете заказать создание графики под Ваши нужды перейдя по&nbsp;ссылке <a class=" link" href="contacts.html" id="cont">&laquo;Контакты&raquo;</a></p>
+		</div>
+		<div class="footer">All rights reserved &copy;&nbsp;2019</div>
+	</div>
+
+</body>
+</html>
